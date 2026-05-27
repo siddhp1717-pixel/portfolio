@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dark {
+  background: linear-gradient(to right, #111, #222);
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+.light {
+  background: #f5f5f5;
+  color: black;
+  min-height: 100vh;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: orange;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.toggle-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: orange;
+  color: white;
+  font-size: 16px;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin: 10px;
+  text-decoration: none;
+  background: orange;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+img {
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.main-title {
+  font-size: 60px;
+  padding: 10px;
+  word-wrap: break-word;
+  background: linear-gradient(to right, orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+.about-text {
+  width: 70%;
+  margin: auto;
+  line-height: 1.8;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px orange;
+  }
+
+  to {
+    text-shadow: 0 0 25px yellow;
+  }
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.social-links a:hover {
+  background: white;
+  color: orange;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.dark {
+  animation: fadeIn 1s ease;
+}
+
+.light {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+
+  .main-title {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+}
+.project-card {
+  background: rgba(255,255,255,0.08);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(255,165,0,0.4);
+}
+
+.project-card h3 {
+  color: orange;
+  font-size: 28px;
+}
+
+.project-buttons {
+  margin-top: 20px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  background: orange;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.project-buttons a:hover {
+  transform: scale(1.1);
+  background: white;
+  color: orange;
+}
+.contact-form {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: orange;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+  background: white;
+  color: orange;
+}
+.dark {
+  background: linear-gradient(-45deg, #111, #222, #333, #111);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .main-title {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .project-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  img {
+    width: 170px !important;
+    height: 170px !important;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+  }
+
+  .contact-form {
+    width: 95%;
+  }
+
+}
+.resume-btn {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  background: orange;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px orange;
+}
+.skill {
+  width: 80%;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.skill p {
+  margin: 10px 0;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #444;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.skill-fill {
+  height: 15px;
+  background: orange;
+  border-radius: 20px;
+  animation: fillAnimation 2s ease;
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 85%;
+}
+
+.js {
+  width: 75%;
+}
+
+.react {
+  width: 70%;
+}
+
+@keyframes fillAnimation {
+
+  from {
+    width: 0;
+  }
+
+}
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.loader h1 {
+  color: orange;
+  font-size: 50px;
+  animation: glow 1s infinite alternate;
+}
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,165,0,0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+}
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: orange;
+  color: white;
+
+  font-size: 28px;
+  cursor: pointer;
+
+  box-shadow: 0 0 20px orange;
+
+  transition: 0.3s;
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+}
